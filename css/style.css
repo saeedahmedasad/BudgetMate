@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;500;600&family=Poppins:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none;
+    font-family: "Raleway", sans-serif;
+}
+body{
+    background: #334433;
+    height: 100vh;
+}
+.sidebar{
+    width: 250px;
+    background: hsl(140, 24%, 33%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+.logo{
+    width: 100%;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+.navlist{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.navlist li{
+    width: 100%;
+    background: red;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: hsl(130, 15%, 23%);
+    color: white;
+    font-weight: 500;
+    transition:.3s;
+}
+.navlist li:hover{
+    background: hsl(128, 13%, 21%);
+}
+.navlist li:hover span{
+    transform: translateX(10px);
+    transition: .2s ease-in-out;
+}
+.setting{
+    width: 100%;
+    background: red;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: hsl(130, 15%, 23%);
+    color: white;
+    font-weight: 500;
+    transition:.3s;
+}
+.setting:hover{
+    background: hsl(128, 13%, 21%);
+}
+.setting:hover span{
+    transform: translateX(10px);
+    transition: .2s ease-in-out;
+}
+.setting:hover i{
+    rotate: 45deg;
+    transition: .4s;
+}
+@media only screen and (max-width: 600px){
+    .sidebar{
+        width: 100px;
+    }
+}
